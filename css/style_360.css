@@ -1,0 +1,96 @@
+@font-face {
+    font-family: neueT;
+    src: url(./font/NeueHaasDisplayThin.ttf);
+}
+
+@font-face {
+    font-family: neueM;
+    src: url(./font/NeueHaasDisplayMediu.ttf);
+}
+
+* {
+    margin: 0px auto;
+}
+
+body {
+    background: url(./img/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.status-bar {
+    height: 60px;
+    padding-top: 10px;
+    background: #F2F2F3;
+}
+
+.status-bar > .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.status-bar > .options > a {
+    margin: 10px;
+    font-family: neueM;
+    text-decoration: none; 
+    font-size: large;  
+    color:#615157;
+}
+
+.status-bar > .options > a:focus {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    /*background-color: #F2F2F3;*/
+    background-color: rgba(214, 215, 214, 1) ;
+}
+
+.description {
+    width: 250px;
+}
+
+.description > * {
+    text-align: center;
+    color: #615157;
+}
+
+.description > p {
+    font-family: neueT;
+    font-size: large;
+    margin-bottom: 40px;
+}
+
+.description > h2 {
+    margin-top: 50px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.toggle-container {
+    float: left;
+    margin: 20px;
+    margin-right: 0px;
+    width: 30px;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-toggle > span {
+    background-color: rgba(97, 81, 87, 1);
+    height: 5px;
+    width: 30px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+}
+
